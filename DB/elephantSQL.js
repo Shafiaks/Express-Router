@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
+require('dotenv').config();
 
-var connectionString  = "postgres://eyqszcfy:vkKHdOqpgL2e7aBP_X-RSY2wTppmCyk4@ella.db.elephantsql.com/eyqszcfy" 
+var connectionString  =  process.env.connectionString;
 //var client = new pg.Client(conString);
 
 const { Pool } = require('pg')
